@@ -1,27 +1,18 @@
 <?php
 
+use codexten\gnt\site\controllers\EnquiryController;
 use codexten\yii\base\Module;
-use codexten\yii\modules\country\controllers\CountryController;
-use codexten\yii\modules\country\models\Country;
-use codexten\yii\modules\country\models\search\CountrySearch;
+use codexten\yii\modules\enquiry\models\Enquiry;
 
 return [
     'modules' => [
-        'country' => [
+        'enquiry' => [
             'class' => Module::class,
-            'controllerNamespace' => 'codexten\yii\modules\country\controllers',
+            'controllerNamespace' => 'codexten\yii\modules\enquiry\controllers',
             'controllerMap' => [
-                'country' => [
-                    'class' => CountryController::class,
-                    'modelClass' => Country::class,
-                    'newSearchModel' => function () {
-                        $className = 'codexten\yii\modules\country\models\search\CountrySearch';
-                        $searchModel = new $className();
-
-                        /* @var $searchModel CountrySearch */
-
-                        return $searchModel;
-                    },
+                'enquiry' => [
+                    'class' => EnquiryController::class,
+                    'modelClass' => Enquiry::class
                 ],
             ],
         ],
