@@ -14,8 +14,8 @@
     "branch-alias": {
       "dev-master": "2.0.x-dev"
     },
-    "sconfig-plugin": {
-      "moduleLocale": "config/moduleCountry.php",
+    "config-plugin": {
+      "moduleEnquiry": "config/moduleEnquiry.php",
       "migrationNamespaces": "config/migrationNamespaces.php"
     }
   }

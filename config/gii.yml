@@ -1,0 +1,16 @@
+params:
+  messageCategory: codexten:module:enquiry
+migration:
+  create_enquiry_table:
+    fields: |
+      name:string(255),
+      email:string(255),
+      mobile:string(50),
+      message:string(255),
+      created_at:integer
+model:
+  enquiry:
+crud:
+  enquiry:
+    modelClass: codexten\yii\modules\enquiry\models\Enquiry
+
