@@ -1,6 +1,8 @@
 <?php
 
-use yii\widgets\DetailView; ?>
+use yii\widgets\DetailView;
+
+?>
 
 <?= DetailView::widget([
     'model' => $model,

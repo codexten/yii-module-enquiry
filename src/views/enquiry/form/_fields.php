@@ -8,5 +8,3 @@
 <?= $form->field($model, 'mobile') ?>
 
 <?= $form->field($model, 'message')->textarea() ?>
-
-

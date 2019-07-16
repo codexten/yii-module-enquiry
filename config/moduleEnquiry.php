@@ -1,8 +1,8 @@
 <?php
 
-use codexten\gnt\site\controllers\EnquiryController;
 use codexten\yii\base\Module;
 use codexten\yii\modules\enquiry\models\Enquiry;
+use codexten\yii\web\CrudController;
 
 return [
     'modules' => [
@@ -11,7 +11,7 @@ return [
             'controllerNamespace' => 'codexten\yii\modules\enquiry\controllers',
             'controllerMap' => [
                 'enquiry' => [
-                    'class' => EnquiryController::class,
+                    'class' => CrudController::class,
                     'modelClass' => Enquiry::class
                 ],
             ],
