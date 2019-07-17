@@ -1,6 +1,9 @@
 params:
   messageCategory: codexten:module:enquiry
 migration:
+  alter_message_column_from_enquiry_table:
+    fields: |
+      message:text
   create_enquiry_table:
     fields: |
       name:string(255),
