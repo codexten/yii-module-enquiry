@@ -9,7 +9,9 @@ use yii\grid\SerialColumn;
     'dataProvider' => $dataProvider,
     'filterModel' => $searchModel,
     'columns' => [
-        'class' => SerialColumn::class,
+        [
+            'class' => SerialColumn::class,
+        ],
         'created_at:date',
         'name',
         'email',
