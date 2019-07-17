@@ -2,7 +2,6 @@
 
 use codexten\yii\base\Module;
 use codexten\yii\modules\enquiry\models\Enquiry;
-use codexten\yii\web\CrudController;
 
 return [
     'modules' => [
@@ -12,7 +11,7 @@ return [
             'controllerNamespace' => 'codexten\yii\modules\enquiry\controllers',
             'controllerMap' => [
                 'enquiry' => [
-                    'class' => CrudController::class,
+                    'class' => \codexten\yii\modules\enquiry\controllers\EnquiryController::class,
                     'modelClass' => Enquiry::class,
                 ],
             ],

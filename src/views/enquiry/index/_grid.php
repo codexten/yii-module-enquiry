@@ -1,6 +1,7 @@
 <?php
 
 use yii\grid\GridView;
+use yii\grid\SerialColumn;
 
 ?>
 
@@ -8,6 +9,8 @@ use yii\grid\GridView;
     'dataProvider' => $dataProvider,
     'filterModel' => $searchModel,
     'columns' => [
+        'class' => SerialColumn::class,
+        'created_at:date',
         'name',
         'email',
         'mobile',
