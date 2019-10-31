@@ -38,6 +38,12 @@ class Enquiry extends ActiveRecord
             [['name', 'email', 'mobile', 'message'], 'required'],
             [['created_at'], 'integer'],
             ['email', 'email'],
+            [
+                ['mobile'],
+                'match',
+                'pattern' => '/^[0-9]+$/',
+                'message' => 'please enter valid information',
+            ],
             [['name', 'email', 'message'], 'string', 'max' => 255],
             [['mobile'], 'string', 'max' => 50],
         ];
