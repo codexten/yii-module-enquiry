@@ -15,7 +15,8 @@ class EnquiryController extends CrudController
 
         if (in_array('create', $this->enabledActions)) {
             $actions['create']['returnUrl'] = ['create'];
-            $actions['create']['messages']['success'] = 'You have successfully send an enquiry to our team. We will respond you as soon as poosible';
+            $actions['create']['messages']['success'] = 'You have successfully send an enquiry 
+            to our team. We will respond you as soon as possible';
         }
 
         return $actions;
